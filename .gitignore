@@ -70,3 +70,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/.DS_Store
+Assets/Scenes/SampleScene.unity
+Assets/Scripts/CajaCollision.cs
+Assets/Scripts/CajaMovement.cs
+Assets/Scenes/SampleScene.unity
+*.unity
+Assets/Scenes/SampleScene.unity
+Assets/Scripts/CajaCollision.cs
+Assets/Scripts/CajaMovement.cs
+Assets/Scripts/CajaCollision.cs
