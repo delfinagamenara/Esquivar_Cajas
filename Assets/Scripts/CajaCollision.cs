@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class CajaCollision : MonoBehaviour
 {
+    CajaSpawner cajaSpawner; 
+    void Start()
+{
+    cajaSpawner = GetComponent<CajaSpawner>();
+    Debug.Log("CajaSpawner en CajaCollision: " + cajaSpawner);
+}
     void OnCollisionEnter (Collision col){
         if (col.gameObject.CompareTag ("Caja"))
         {
-            col.gameObject.GetComponent <CajaSpawner>().LocateBoxAtRandomPosition ();
-        }
+  if (cajaSpawner != null)
+            {
+                cajaSpawner.LocateBoxAtRandomPosition();
+            }        }
     }
 }

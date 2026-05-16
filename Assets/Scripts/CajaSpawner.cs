@@ -9,7 +9,9 @@ public class CajaSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+           GetComponent<Rigidbody>().freezeRotation = true;
        LocateBoxAtRandomPosition (); 
+
     }
 
     // Update is called once per frame
@@ -19,6 +21,10 @@ public class CajaSpawner : MonoBehaviour
     }
     public void LocateBoxAtRandomPosition ()
     {
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+           GetComponent<CajaMovement>().IncreaseSpeed();
+
+
         Vector3 currentPosition = transform.position;
         float newX = 0;
         randomNumber = Random.Range (0,3);
@@ -35,6 +41,7 @@ public class CajaSpawner : MonoBehaviour
 
         }
         currentPosition.x = newX;
+        currentPosition.y = startYValue;
         transform.position = currentPosition;
 
     }

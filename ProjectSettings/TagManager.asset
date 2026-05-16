@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Caja
   - Helice
+  - Plane
   layers:
   - Default
   - TransparentFX
